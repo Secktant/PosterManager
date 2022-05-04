@@ -22,7 +22,7 @@ public class PosterManager {
         this.maxMovies = maxMovies;
     }
 
-    public String[] getMoveListList() {
+    public String[] getMoveList() {
         return moveList;
     }
 
@@ -42,22 +42,22 @@ public class PosterManager {
 
     }
 
-    public String [] findAll() {
+    public String[] findAll() {
         return moveList;
     }
 
-    public void findLast () {
+    public void findLast() {
         int resultLength;
-        if(moveList.length > maxMovies) {
+        if (moveList.length > maxMovies) {
             resultLength = maxMovies;
         } else {
             resultLength = moveList.length;
         }
 
-        String [] tmp = new String[resultLength];
+        String[] tmp = new String[resultLength];
         int lastIndex = moveList.length - 1;
 
-        for (int i = 0; i < resultLength ; i++) {
+        for (int i = 0; i < resultLength; i++) {
             tmp[i] = moveList[lastIndex - i];
 
         }
